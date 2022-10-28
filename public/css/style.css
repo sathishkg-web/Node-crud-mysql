@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav{
+    padding:0px 10px;
+    background-color:white;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 0 15px 15px rgb(0,0,0,0.05);
+    box-sizing: border-box;
+}
+ul{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav .logo{
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: rgb(23, 23, 94);
+    color:white;
+    padding:0.7rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+ul a{
+    text-decoration: none;
+    font-size: 18px;
+    margin:10px 10px;
+    color:black;
+}
+ul a:hover{
+    background-color: rgb(23, 23, 94);
+    color:white;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+
+.logo a{
+  text-decoration: none;
+  background-color: none;
+  color:white;
+}
+.logo a:hover{
+    text-decoration: none;
+    background-color: none;
+}  
+
+.container{
+    background-color: rgb(215, 222, 228);
+    justify-content: center;
+    display: block;
+    border-radius: 1.5rem;
+    padding:1rem;
+    width: 20%;
+    text-align: center;
+    line-height: 2.5rem; 
+    letter-spacing: 0.1rem;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    
+}
+.button-primary{
+    background-color: black;
+    color:white;
+    border-radius: 2.5rem;
+    padding: 0.4rem;
+    letter-spacing: 0.1rem;
+}
+
+.u-full-width{
+    border-radius: 0.3rem;
+    border:2rem;
+    height: 1.1rem;
+    border-radius: 1rem;
+    padding:0.3rem;
+    display:inline-block;
+}
+
+
+html{
+    background-color:white;
+}
+
+body{
+    margin: 0 auto;
+}
+
+main h2{
+border-bottom: 1px solid grey;
+text-align: center;
+color:black;
+}
+
+.container2{
+ width: 80%;
+ position: absolute;
+ left: 10%;
+}
+table{
+ width:100%;
+ border-collapse: collapse;
+ margin-top: 20px;
+ padding: 10px;
+}
+
+table thead td{
+    padding: 0.5rem;
+    color: white;
+    background-color:grey;
+    font-weight: 0.8rem;
+}
+
+table tbody td {
+    padding:5px;
+}
+
+table tbody tr:nth-child(even){
+    background-color: rgb(245, 244, 244);
+}
+
+.edit, .delete{
+    text-decoration: none;
+    color:white;
+    background-color:rgb(250, 197, 100);
+    display:block;
+    padding:2px;
+    border-radius: 4px;
+    text-align: center;
+    width:55px;
+}
+.delete{
+    background-color: rgb(199, 21, 21);
+    color:white;
+}
+
+.fourzerofour h1,h2 {
+  color: red;
+  border-bottom: none;
+  text-align: center;
+  top: 5rem;
+}
+
+.alert{
+    color:green;
+    background-color: rgb(181, 233, 181);
+    border-radius: 0.5rem;
+    border:none;
+    font-size: 12px;
+}
+
+
+ .container1 .logo{
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: rgb(23, 23, 94);
+    color:white;
+    padding:0.1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;   
+    width:7.3rem;
+    float:right;
+ }
+span{
+    color: rgb(23, 23, 94);
+    background-color:white;
+    padding:0rem;
+}
+ .container1{
+    background-color: rgb(215, 222, 228);
+    justify-content: center;
+    display: inline-block;
+    border-radius: 1.0rem;
+    padding:1.2rem;
+    width: 20%;
+    text-align: center;
+    line-height: 2.2rem; 
+    letter-spacing: 0.1rem;
+    position: absolute;
+    top: 20%;
+    left: 40%; 
+}
+.button-secondary{
+    background-color:black;
+    color:white;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    border-top: 0.5rem;
+    font-size: 0.5;
+}
+.login-width{
+    border-radius: 0.3rem;
+    height: 1.4rem;
+    border-radius: 0.3rem;
+    padding:0.3rem;
+    display:inline-block;
+    width:100%;
+    border:none;
+}
+
+label{
+    float:left;
+    font-size: 14px;
+}

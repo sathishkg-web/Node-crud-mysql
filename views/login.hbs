@@ -1,0 +1,33 @@
+<header>
+        <nav>
+            <div class="logo"><a href="/">Express <span>CRUD</span></a></div>
+            <div class="menu">
+            <ul>
+                <li><a href="#">Welcome</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container1">
+            <div class="logo">Express <span>CRUD</span></div>
+            <h3>LOGIN</h3>
+            {{#if msg}}
+             <div class="alert">{{msg}}</div>
+            {{/if}}
+            <hr/>
+        <form method="Post" action="/auth">
+            <div>
+                <label for="username">User name</label>
+                <input type="text" name="username" placeholder="Enter name..."class="login-width">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="text" name="password" placeholder="Enter Password..."class="login-width">
+            </div>
+            <div>
+            <button type="submit" class="button-secondary">Login</button>
+            </div>
+        </form>
+        </div>
+    </main>

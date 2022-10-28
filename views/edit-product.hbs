@@ -1,0 +1,39 @@
+<header>
+        <nav>
+            <div class="logo"><a href="/">Express CRUD</a></div>
+            <div class="menu">
+            <ul>
+                <li><a href='/'>Hi {{name}}...!</a></li>
+                <li><a href='/'>View</a></li>
+                <li><a href="/login">Logout [=></a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h3><b>+</b>EDIT PRODUCTS</h3>
+            {{#if msg}}
+             <div class="alert">{{msg}}</div>
+            {{/if}}
+        {{#each rows}}
+        <form method="Post" action="/editproduct/{{this.ID}}" >
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title" value="{{this.TITLE}}" placeholder="title.." class="u-full-width">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" name="author" value="{{this.AUTHOR}}" placeholder="Author.." class="u-full-width">
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input type="text" name="price" value="{{this.PRICE}}" placeholder="price.." class="u-full-width">
+            </div>
+            <div>
+            <button type="submit" class="button-primary">Save changes</button>
+            </div>
+        </form>
+        {{/each}}
+        </div>
+    </main>

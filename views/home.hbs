@@ -1,0 +1,42 @@
+<header>
+        <nav>
+            <div class="logo"><a href="/">Express <span>CRUD</span></a></div>
+            <div class="menu">
+            <ul>
+                <li><a href='/'>Hi {{name}}...!</a></li>
+                <li><a href='admin/add-product'>Add Product</a></li>
+                <li><a href="/login">Logout [=></a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>List of products</h2>
+
+        <div class="container2">
+        <table>
+            <thead>
+                <tr>
+                    <td>No</td>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Price</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each rows}}
+             <tr>
+             <td>{{this.ID}}</td>
+             <td>{{this.TITLE}}</td>
+             <td>{{this.AUTHOR}}</td>
+             <td>{{this.PRICE}}</td>
+             <td><a class="edit" href="/editproduct/{{this.ID}}">Edit</a></td>
+             <td><a onclick="return confirm('Are you sure ?')" class="delete" href="/deleteproduct/{{this.ID}}">Delete</a></td>
+             </tr>
+            {{/each}}
+            </tbody>
+        </table>
+        </div>
+    </main>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color: rgb(215, 222, 228);
+            justify-content: center;
+            display: block;
+            border-radius: 1.5rem;
+            padding:0.5rem;
+            width: 20%;
+            text-align: center;
+            line-height: 2.5rem;
+            letter-spacing: 0.1rem;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+        .button-primary{
+            background-color: black;
+            color:white;
+            border-radius: 2.5rem;
+            padding: 0.3rem;
+            letter-spacing: 0.1rem;
+        }
+        .u-full-width{
+            border-radius: 0.3rem;
+            border:2rem;
+            height: 1rem;
+            border-radius: 2rem;
+            padding:0.3rem;
+        }
+        nav{
+            padding:0px 10px;
+            background-color:   white;
+            align-items: center;
+            display:flex;
+            justify-content: space-between;
+            box-shadow: 0 15px 15px rgb(0,0,0,0.05);
+            box-sizing: border-box;
+        }
+        ul{
+            display:flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+        nav .logo{
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        ul a{
+            text-decoration: none;
+            font-size: 18px;
+            margin:10px 10px;
+            color:black;
+        }
+        ul a:hover{
+            background-color: black;
+            border-radius: 1.5rem;
+            color:white;
+            padding:0.4rem;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/skeleton.css" />
+    <title>Add Product</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">LOGO shop</div>
+            <div class="menu">
+            <ul>
+                <li><a href='/'>SHOP</a></li>
+                <li><a href='admin/add-product'>ADD PRODUCT</a></li>
+                <li><a href="#">LOGOUT [=></a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h3><b>+</b>ADD PRODUCTS</h3>
+        <form action="add-product" method="Post">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="title.." class="u-full-width">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" name="author" placeholder="Author.." class="u-full-width">
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input type="text" name="price" placeholder="price.." class="u-full-width">
+            </div>
+            <div>
+            <button type="submit" class="button-primary">Add product [-></button>
+            </div>
+        </form>
+        </div>
+    </main>
+</body>
+</html>
